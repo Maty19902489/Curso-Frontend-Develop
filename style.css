@@ -93,3 +93,99 @@ outline: none;
 }
 /* es un pseudoelemento. todos los :placeholder 
 seran de ese color */
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    /* todos los elementos dentro de el, se posicionan
+    en relacion a el */
+
+}
+
+.carousel__container {
+    white-space: nowrap;
+    /* para que todo se acomode en la misma linea */
+    margin: 70px 0;
+    padding-bottom: 10px;
+}
+
+.carousel-item {
+    background-color: purple;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* el contenido que no entre en el contenedor, se ocultara
+    segun lo que entre en el mismo. pero no se modifica
+    el tamaño del contenedor */
+    margin-right: 10px;
+    display: inline-block;
+    /* los elementos se posicionan uno al lado del otro */
+    cursor: pointer;
+    transition: 450ms all;
+    /* esto permite que cuando el cursor pase por alli
+    la transicion sea mas tranquila */
+    transform-origin: center left;
+    position: relative;
+}  
+
+
+.carousel-item:hover ~ .carousel-item
+/* selector de hermanos generales, selecciona el 
+segundo solo si esta precedido por el primero */ 
+{
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    /* hace que cuando el cursor pase por arriba
+    aumente su tamaño en 1.5. y con opacity
+    que el que este seleccionado ya no se
+    vea transparente */
+    opacity: 1;
+}
+
+.carousel-item__img {
+width: 200px;
+height: 250px;
+-o-object-fit: cover;
+object-fit: cover;
+/* hace que la imagen recupere su tamaño normal */ 
+}
+
+.carousel-itenm__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0pc;
+    display: flex;
+    align-items: flex-start;
+
+}
+.carousel-item__details--title {
+  color: white;
+  margin: 5px 0px 0px 0px;
+}
+
+.carousel-item__details--subtitle {
+    color: white;
+    font-size: 8px;
+    margin: 3px 0px;
+  }
+
+
+
