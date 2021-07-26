@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 
@@ -101,6 +102,8 @@ seran de ese color */
     position: relative;
     /* todos los elementos dentro de el, se posicionan
     en relacion a el */
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
