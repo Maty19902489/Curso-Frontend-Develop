@@ -65,7 +65,7 @@ margin-right: 10px;
 }
 
 .buscador {
-    height: 300px;
+    height: 100px;
     
     display: flex;
     flex-direction: column;
@@ -197,6 +197,9 @@ object-fit: cover;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      padding: 0 30px;
+      min-height: calc(100vh - 200px);
+
   }
 
 
@@ -204,4 +207,135 @@ object-fit: cover;
   .login__container-twitter {
       height: 15px;
   }
+
+  .login__containter {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      border-radius: 40px;
+      color: white;
+      padding: 60px 68px 40px;
+      min-height: 700px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 14px;
+}
+
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
  
+.login__container--remember-me a
+{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover
+{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.login__container--social-media > div {
+    /* el > quiere decir que agarre todos 
+    los div de esa clase */
+   display: flex;
+   align-items: center; 
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+
+.login__container--social-media > div > img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.login__container--register {
+    font-size: 14px;
+    
+}
+
+.login__container--register a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    }
+
+.login__container--register a:hover {
+        text-decoration: underline
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    margin-bottom: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none;
+    height: 50px;
+    /* con ese height logramos el espacio entre inicio
+    de seion y correo */
+}
+
+::placeholder {
+    color: white;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.footer {
+    
+    background-color: #AB88FF;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    } 
+
+    .footer a {
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
