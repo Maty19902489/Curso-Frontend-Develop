@@ -339,3 +339,12 @@ object-fit: cover;
     .footer a:hover {
         text-decoration: underline;
     }
+
+    @media only screen and (max-width: 600px) {
+        .login__container {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            width: 100%;
+        }
+    }
