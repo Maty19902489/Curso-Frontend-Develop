@@ -347,4 +347,11 @@ object-fit: cover;
             padding: 0;
             width: 100%;
         }
+
+        .footter {
+            align-items: flex-start;
+            flex-direction: column;
+        }
     }
+
+    
